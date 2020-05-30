@@ -28,7 +28,7 @@ Modifica la gramática corrigiendo los errores que veas, de manera que genere fr
 
 <expr> ::= (<left-value> '=')* <comp>
 
-<left-value> ::= WORD('.' WORD | '[' <asig> ']')*
+<left-value> ::= WORD('.' WORD | '[' <expr> ']')*
 
 <comp> ::= <term> (('==', '!=', '>', '>=', '<', '<=', '=') <term>)*
 
